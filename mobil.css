@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+:root {
+    --title: #8C4980;
+    --background: #1C0C24;
+    --text: #DAD1D2;
+    --typo-title: font-family: font-family: 'Creepster', cursive;
+}
