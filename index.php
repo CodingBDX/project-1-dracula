@@ -11,23 +11,23 @@
 </head>
 <body>
     <!-- partie de alexis -->
-    <?php include 'header.php'; ?>
+    <?php require 'header.php'; ?>
     <main>
 <div id="container">
     
-<?php include 'contact.php'; ?>    
+<?php require 'contact.php'; ?>    
     <!-- partie end alexis -->
     
     <div id="container-parcour">
-        <?php include 'experiences.php'; ?>
+        <?php require 'experiences.php'; ?>
     <div id="formation-hobbies">
-        <?php include 'formations.php'; ?>
-        <?php include 'hobbies.php'; ?>
+        <?php require 'formations.php'; ?>
+        <?php require 'hobbies.php'; ?>
     </div>
 </div>    
 </div>
     </main>
 
-<?php include 'footer.php'; ?>
+<?php require 'footer.php'; ?>
 </body>
 </html>
