@@ -1,0 +1,25 @@
+/* HEADER (Alexis) */
+.banner {
+    width: 100vw;
+    padding: 10px;
+    background: url("../img/hauntedcastle.jpg") center;
+    text-align: center;
+}
+
+.banner img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--text);
+}
+
+h2 {
+    color: var(--title);
+    text-align: center;
+    max-width: 70vw;
+    margin: 10px auto;
+}
+/* // fin HEADER */

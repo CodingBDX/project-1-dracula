@@ -26,10 +26,6 @@ body {
     background-color: var(--background);
 }
 
-/* HEADER (Alexis) */
-
-/* // fin HEADER */
-
 #container {
     display: flex;
     flex-direction: column;
