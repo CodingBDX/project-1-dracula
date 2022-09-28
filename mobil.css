@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 :root {
-    --title: #8C4980;
-    --background: #1C0C24;
-    --background-els: #2c1439;
-    --text: #DAD1D2;
+    --title: #C756B3; /* h2 - h3 - h4 */
+    --background: #1C0C24; /* fond du body */
+    --background-els: #3F0A59; /* fond des sections */
+    --text: #DAD1D2; /* texte des sections et h1 */
     --typo-title: font-family: 'Creepster', cursive;
 }
 
