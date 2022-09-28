@@ -14,10 +14,17 @@
     --text: #DAD1D2;
     /* texte des sections et h1 */
     --typo-title: font-family: 'Creepster', cursive;
+    /* police d'écriture des titres */
+}
+
+/* reset des margin et padding des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #1C0C24;
+    background-color: var(--background);
 }
 
 #container {
@@ -41,4 +48,5 @@ body {
 }
 
 
-.experiences h3 {}
+.experiences h3 {
+}
