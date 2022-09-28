@@ -28,22 +28,22 @@ foreach ($experiences as $key => $experience) {
     foreach ($experience as $key => $value) {
         switch ($key) {
             case 'address' === $key:
-                echo '<i>'.$value.'</i>'."\n";
+                echo '<i>'.$value.'</i>'.'</br>';
 
                 break;
 
             case 'date' === $key:
-                echo '<time>'.$value.'</time>'."\n";
+                echo '<time>'.$value.'</time>'.'</br>';
 
                 break;
 
             case 'description' === $key:
-                echo '<mark>'.$value.'</mark>'."\n";
+                echo '<mark>'.$value.'</mark>'.'</br>';
 
                 break;
 
             default:'name' === $key;
-                echo '<h4>'.$value.'<h4>'."\n";
+                echo '<h4>'.$value.'<h4>'.'</br>';
 
                 break;
         }

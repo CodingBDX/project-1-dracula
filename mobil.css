@@ -3,6 +3,22 @@
 :root {
     --title: #8C4980;
     --background: #1C0C24;
+    --background-els: #2c1439;
     --text: #DAD1D2;
-    --typo-title: font-family: font-family: 'Creepster', cursive;
+    --typo-title: font-family: 'Creepster', cursive;
 }
+
+body {
+    background-color: #1C0C24;
+}
+
+/* antony experiences */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-els);
+
+}
+
+.experiences h3 {}
