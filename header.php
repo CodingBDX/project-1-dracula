@@ -1,9 +1,8 @@
-    <header>
-        <div id="banner">
-        <img id="photo-profil" src=""  alt="photo-profil" srcset="">
-        <h1>dracula</h1>
+<header>
+    <div id="banner">
+        <img id="photo-profil" src="" alt="photo-profil" srcset="">
+        <h1>Dracula</h1>
+    </div>
 
-</div>
-
-<h2>intitule post</h2>
-    </header>
+    <h2>Médecin de prélèvement mobile pour la banque de sang</h2>
+</header>
