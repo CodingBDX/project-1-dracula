@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dracula | vonhog - super stars</title>
     <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="mobil.css">
-
+    
 </head>
 <body>
     <!-- partie de alexis -->
