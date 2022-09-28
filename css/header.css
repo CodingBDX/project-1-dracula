@@ -29,6 +29,8 @@ h2 {
     text-align: center;
     max-width: 70vw;
     margin: 10px auto;
+    font-size: 2em;
+    line-height: 1.2em;
 }
 
 /* // fin HEADER */
