@@ -22,7 +22,11 @@ $experiences = [
 ];
 ?>
 <div class="experiences">
+    <div class="header">
 <h3>Experiences</h3>
+<span class="drop"></span><span class="drop"></span><span class="drop"></span><span class="drop"></span>
+</div>
+<div class="content">
 <?php
 foreach ($experiences as $key => $experience) {
     foreach ($experience as $key => $value) {
@@ -43,11 +47,12 @@ foreach ($experiences as $key => $experience) {
                 break;
 
             default:'name' === $key;
-                echo '<h4>'.$value.'<h4>'.'</br>';
+                echo '<h4>'.$value.'<h4>';
 
                 break;
         }
     }
 }
 ?>
+</div>
 </div>
