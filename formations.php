@@ -1,20 +1,14 @@
 <?php
 $studies = [
-
-    [
-    'Diplome'=>'Baccalaureat série ES', 
-    'Lieux'=>'Bucarest', 
-    'Date'=> '1897',
-    ],
     [
     'Diplome'=>'CAP petite enfance',
     'Lieux'=>'Timiçoara', 
     'Date'=> '1623'
     ],
     [
-    'Diplome'=>'Doctora de Medecin légiste',
-    'Lieux'=>'Paris',
-    'Date'=> '1940'
+    'Diplome'=>'Baccalaureat série ES', 
+    'Lieux'=>'Bucarest', 
+    'Date'=> '1897',
     ],
     [
     'Diplome'=>'BTS  Hostellerie restauration',
@@ -22,11 +16,17 @@ $studies = [
     'Date'=> '1900',
     ],
     [
+    'Diplome'=>'Doctora de Medecin légiste',
+    'Lieux'=>'Paris',
+    'Date'=> '1940'
+    ],
+    [
     'Diplome'=>'Deuxième Etoile de Ski',
     'Lieux'=>'Carpates',
     'Date'=> '2000'
     ],
 ];
+
 ?>
 <div class="formation">
 <h3>Formation</h3>
