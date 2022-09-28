@@ -1,0 +1,13 @@
+/* antony experiences */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-els);
+    color: var(--text);
+
+}
+
+
+.experiences h3 {}

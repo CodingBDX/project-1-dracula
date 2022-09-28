@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url(./css/experiences.css);
+@import url(./css/formations.css);
+@import url(./css/header.css);
+@import url(./css/hobbies.css);
 
 :root {
-    --title: #8C4980;
+    --title: #C756B3;
+    /* h2 - h3 - h4 */
     --background: #1C0C24;
-    --background-els: #2c1439;
+    /* fond du body */
+    --background-els: #3F0A59;
+    /* fond des sections */
     --text: #DAD1D2;
+    /* texte des sections et h1 */
     --typo-title: font-family: 'Creepster', cursive;
 }
 
 body {
     background-color: #1C0C24;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* antony experiences */
@@ -22,5 +39,6 @@ body {
     color: var(--text);
 
 }
+
 
 .experiences h3 {}
