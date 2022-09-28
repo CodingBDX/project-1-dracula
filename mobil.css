@@ -8,9 +8,19 @@
     --typo-title: font-family: 'Creepster', cursive;
 }
 
-body {
-    background-color: #1C0C24;
+/* reset des margin et padding des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: var(--background);
+}
+
+/* HEADER (Alexis) */
+
+/* // fin HEADER */
 
 /* antony experiences */
 .experiences {
