@@ -14,6 +14,7 @@
     --text: #DAD1D2;
     /* texte des sections et h1 */
     --typo-title: font-family: 'Creepster', cursive;
+    /* police d'écriture des titres */
 }
 
 /* reset des margin et padding des navigateurs */
@@ -34,6 +35,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* antony experiences */
 .experiences {
     display: flex;
@@ -46,4 +48,5 @@ body {
 }
 
 
-.experiences h3 {}
+.experiences h3 {
+}

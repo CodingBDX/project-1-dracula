@@ -10,10 +10,18 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    border: 2px solid var(--title);
+}
+
+h1, h2 {
+    font-family: "Creepster", cursive;
+    letter-spacing: 2px;
 }
 
 h1 {
     color: var(--text);
+    font-size: 3em;
+    text-shadow: 2px 2px var(--title);
 }
 
 h2 {
@@ -22,4 +30,5 @@ h2 {
     max-width: 70vw;
     margin: 10px auto;
 }
+
 /* // fin HEADER */
