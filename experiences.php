@@ -3,9 +3,9 @@
 $experiences = [
     [
         'name' => 'poissonerie',
-        'address' => 'kil 33 dead',
-        'date' => '08/1300',
-        'description' => 'loremdddd dfdf df',
+        'address' => 'impasse de la tête coupee',
+        'date' => '1350',
+        'description' => 'bonne experience, patron delicieux avec ses employes',
     ],
     [
         'name' => 'bouro',
@@ -19,6 +19,12 @@ $experiences = [
         'date' => '1234.34',
         'description' => 'superbe impalement',
     ],
+    [
+        'name' => 'jscer',
+        'address' => '56 rue du uc',
+        'date' => '900/03',
+        'description' => 'superbe impalement',
+    ],
 ];
 ?>
 <div class="experiences">
@@ -27,7 +33,6 @@ $experiences = [
 </div>
 <div class="content">
     
-    <div class="content-experiences">
 <?php
 foreach ($experiences as $key => $experience) {
     echo ' <div class="time">';
@@ -59,9 +64,9 @@ foreach ($experiences as $key => $experience) {
                 break;
         }
     }
-    echo '</div>';
+
+    echo '</br></div>';
 }
 ?>
-</div>
 </div>
 </div>
