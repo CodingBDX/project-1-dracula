@@ -11,7 +11,7 @@
     ?>
     <h3>Contacts</h3>
     <address>
-        <div class="block location">
+        <div class="block">
             <h4>Adresse :</h4>
             <p><?php echo $contacts["adresse"] ?></p>
         </div>
