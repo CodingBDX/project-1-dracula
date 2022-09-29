@@ -1,0 +1,27 @@
+body {
+    background-color: var(--background);
+    margin: 0px;
+    padding: 0px;
+    color: var(--text);
+
+}
+.titlehobbies {
+    display: list-item;
+    font-weight: bold;
+    font-family: var (--typo-title);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-els);
+    
+    
+}
+
+.contenthobbies {
+    color: var(--text);
+    display: block;
+    font-family: var(--typo-title);
+    font-size: 2.2em;
+    text-align: start;
+
+
+}

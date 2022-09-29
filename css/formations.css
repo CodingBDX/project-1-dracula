@@ -1,0 +1,13 @@
+/* Julien formation */
+.formation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-els);
+    color: var(--text);
+
+}
+
+
+.formation h3 {}
