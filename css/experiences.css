@@ -38,6 +38,7 @@
 
 .experiences .content .time:nth-child(1n) {
     margin-left: 50%;
+    padding-top: .4em;
 }
 
 .experiences .content .time:nth-last-child(2) {
@@ -60,9 +61,16 @@
     font-weight: 200;
 }
 
+.experiences .content .data-experiences mark {
+    text-decoration: none;
+    background-color: var(--title);
+    color: var(--text);
+}
+
 .experiences .content span.rounded {
     position: relative;
     display: block;
+
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -74,7 +82,53 @@
 .experiences .content span.line {
     display: block;
     width: 2px;
-    height: 90%;
+    height: 100%;
     background-color: var(--title);
     transform: translate(7px, 0);
+}
+
+/* goute de sange */
+
+.drop {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    margin: 0 auto;
+    background: var(--title);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-animation-name: drip;
+    -webkit-animation-name: drip;
+    animation-name: drip;
+    -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    left: 56px
+}
+
+.drop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--title);
+    top: -8px;
+    left: 2px
+}
+
+@keyframes drip {
+    to {
+        top: 100vh;
+    }
 }

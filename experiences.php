@@ -30,6 +30,9 @@ $experiences = [
 <div class="experiences">
     <div class="header">
 <h3>Experiences</h3>
+
+<div class="drop"></div>
+
 </div>
 <div class="content">
     
