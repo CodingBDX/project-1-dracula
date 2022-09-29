@@ -12,19 +12,27 @@
 }
 
 .experiences .content h4 {
-    font-size: 2.2em;
+    /* font-size: 2.2em; */
 }
 
+.experiences .content {
+    display: flex;
+    text-align: right;
+    height: 100%;
+    font-size: 1.2em;
+    width: calc(100% - 1em);
+    margin: 2em 0 0 0;
+}
+
+.experiences .content time {
+    color: rgba(0, 0, 0, .8);
+}
 
 .experiences .header {
     text-align: center;
     background-color: rgba(0, 0, 0, .4);
     width: 100%;
     border-bottom: .5em solid rgba(#3F0A59, .5);
-}
-
-.experiences .content {
-    text-align: start;
 }
 
 .experiences .header h3 {
@@ -34,53 +42,42 @@
     font-family: 'Creepster', cursive;
 }
 
+.experiences .content-experiences {
 
-.drop {
-    width: .3em;
-    height: .3em;
-    border-radius: 0 100% 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.experiences .content .time {
+    padding-right: 1rem;
+    width: 2%;
+    height: 15%;
+    /* display: block;
+    z-index: 2; */
+}
+
+.experiences .content .data-experiences {
+    gap: .5em;
+    text-align: right;
+    width: 60vw;
+    margin-top: -60px;
+}
+
+.experiences .content span.rounded {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
     background-color: var(--title);
-    position: absolute;
-    z-index: 3;
+    margin-top: 1.8rem;
 
-    top: 83%;
-    animation: drop 3s infinite both;
 }
 
-.drop:nth-child(1) {
-    left: 3vw;
-}
-
-.drop:nth-child(2) {
-    left: 30%;
-    animation-delay: -.4s;
-}
-
-.drop:nth-child(3) {
-    left: 35%;
-    animation-delay: -1.5s;
-}
-
-.drop:nth-child(4) {
-    left: 62%;
-    animation-delay: -.8s;
-}
-
-
-
-@keyframes drop {
-    0% {
-        transform: translateY(0) scaleX(.85) rotate(45deg);
-        animation-timing-function: ease-out;
-    }
-
-    60% {
-        transform: translateY(120%) scaleX(.85) rotate(45deg);
-        animation-timing-function: ease-in;
-    }
-
-    80%,
-    100% {
-        transform: translateY(100vh) scaleX(.85) rotate(45deg);
-    }
+.experiences .content span.line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--title);
+    transform: translate(7px, 0);
 }

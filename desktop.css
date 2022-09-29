@@ -4,3 +4,15 @@
 @import url(./css/header.css);
 @import url(./css/hobbies.css);
 @import url(./mobil.css);
+
+:root {
+    --title: #C756B3;
+    /* h2 - h3 - h4 */
+    --background: #1C0C24;
+    /* fond du body */
+    --background-els: #3F0A59;
+    /* fond des sections */
+    --text: #DAD1D2;
+    /* texte des sections et h1 */
+    --typo-title: font-family: 'Creepster', cursive;
+}

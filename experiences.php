@@ -14,21 +14,28 @@ $experiences = [
         'description' => 'decapiter les rois et reines',
     ],
     [
-        'name' => '',
-        'address' => '',
-        'date' => '',
-        'description' => '',
+        'name' => 'edouard',
+        'address' => '56 rue de la joue',
+        'date' => '1234.34',
+        'description' => 'superbe impalement',
     ],
 ];
 ?>
 <div class="experiences">
     <div class="header">
 <h3>Experiences</h3>
-<span class="drop"></span><span class="drop"></span><span class="drop"></span><span class="drop"></span>
 </div>
 <div class="content">
+    
+    <div class="content-experiences">
 <?php
 foreach ($experiences as $key => $experience) {
+    echo ' <div class="time">';
+    echo ' <span class="rounded"></span>';
+
+    echo '     <span class="line"></span>';
+    echo '</div>';
+    echo '<div class="data-experiences">';
     foreach ($experience as $key => $value) {
         switch ($key) {
             case 'address' === $key:
@@ -52,7 +59,9 @@ foreach ($experiences as $key => $experience) {
                 break;
         }
     }
+    echo '</div>';
 }
 ?>
+</div>
 </div>
 </div>
