@@ -1,8 +1,14 @@
 /* HEADER (Alexis) */
 .banner {
     width: 100vw;
+    height: 40vw;
+
     padding: 10px;
-    background: url("../img/hauntedcastle.jpg") center;
+    background: url("../img/blood.png");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    background-size: cover;
     text-align: center;
 
     display: flex;
@@ -24,7 +30,9 @@ h2 {
 }
 
 h1 {
-    color: var(--text);
+    color: #971C27;
+    letter-spacing: .3em;
+    line-height: .2em;
     font-size: 3em;
     text-shadow: 2px 2px var(--title);
 }

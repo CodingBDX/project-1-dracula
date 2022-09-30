@@ -48,6 +48,14 @@
 
 }
 
+.experiences .header>div:nth-child(2) {
+    width: 67%;
+}
+
+.experiences .header>div:nth-child(1) {
+    width: 33%;
+}
+
 .experiences .content {
     margin: .8em 0;
     width: 100%;
@@ -125,9 +133,9 @@
     -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
     -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
     animation-timing-function: cubic-bezier(1, 0, .91, .19);
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
