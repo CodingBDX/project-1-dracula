@@ -14,18 +14,38 @@
 }
 
 .experiences .header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
     padding: .6em 0;
     text-align: center;
+
     background-color: rgba(0, 0, 0, .4);
     width: 100%;
     border-bottom: .5em solid rgba(#3F0A59, .5);
 }
 
+.experiences .header>div {
+
+    width: 50%;
+}
+
 .experiences .header h3 {
+
     color: var(--title);
     font-weight: bolder;
     font-size: 2.3em;
     font-family: 'Creepster', cursive;
+
+
+}
+
+.experiences .header svg {
+    width: 10vw;
+    background-color: var(--background-els);
+    border-radius: 50%;
+
 }
 
 .experiences .content {
@@ -93,7 +113,7 @@
     position: relative;
     width: 15px;
     height: 15px;
-    top: -5px;
+    top: -15px;
     margin: 0 auto;
     background: var(--title);
     -moz-border-radius: 20px;
@@ -108,7 +128,7 @@
     -moz-animation-duration: 2s;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 3s;
+
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -128,7 +148,12 @@
 }
 
 @keyframes drip {
+    from {
+        transform: scale(0.5);
+    }
+
     to {
+        transform: scale(1);
         top: 100vh;
     }
 }
