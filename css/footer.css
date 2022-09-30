@@ -3,3 +3,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+footer>svg {
+    width: 10vw;
+}
