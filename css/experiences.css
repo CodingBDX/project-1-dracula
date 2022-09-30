@@ -50,7 +50,7 @@
 
 .experiences .content {
     margin: .8em 0;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-gap: 0;
     grid-template-columns: 30% 70%;
