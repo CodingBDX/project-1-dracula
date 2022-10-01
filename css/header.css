@@ -1,27 +1,62 @@
 /* HEADER (Alexis) */
-.banner {
+header {
     width: 100vw;
     height: 40vw;
 
-    padding: 10px;
-    background: url("../img/blood.png");
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: url('../img/hauntedcastle.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    text-align: center;
 
+}
+
+header>div {
+    width: 30%;
+    justify-content: center;
+    align-self: center;
+}
+
+header .button-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.2em 0 0;
+}
+
+header .button-toggle>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .button-toggle div>button {
+    margin: .9em .9em 0 0;
+    padding: .3em;
+    background-color: var(--title);
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1.2em;
+    border-radius: .5em;
+    border: none;
+    color: white;
+}
+
+header .banner {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    align-self: center;
+
 }
 
-.banner img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid var(--title);
+header .banner img {
+    width: 30vw;
 }
+
+
 
 h1,
 h2 {
@@ -33,7 +68,7 @@ h1 {
     color: #971C27;
     letter-spacing: .3em;
     line-height: .2em;
-    font-size: 3em;
+    font-size: 4em;
     text-shadow: 2px 2px var(--title);
 }
 
@@ -47,3 +82,70 @@ h2 {
 }
 
 /* // fin HEADER */
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: scale(1.2);
+    margin: .6em 2.6em 0 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--title);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--background-els);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--background-els);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
