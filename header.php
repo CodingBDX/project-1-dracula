@@ -8,13 +8,13 @@
 <div class="button-toggle">
     <div>
     <label class="switch">
-  <input type="checkbox">
+  <input type="checkbox" class="dark-light">
   <span class="slider round"></span>
 </label>
 </div>
 <div>
-    <button>FR</button>
-    <button>EN</button>
+    <button class="fr">FR</button>
+    <button class="en">EN</button>
 
 </div>
 </div>

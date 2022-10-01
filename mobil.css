@@ -7,6 +7,17 @@
 @import url(./css/hobbies.css);
 @import url(./css/footer.css);
 
+.light {
+    --title: #5D0030;
+    /* h2 - h3 - h4 */
+    --background: #7C2A3F;
+    /* fond du body */
+    --background-els: #DD5561;
+    /* fond des sections */
+    --text: #4C697C;
+    /* texte des sections et h1 */
+}
+
 :root {
     --title: #C756B3;
     /* h2 - h3 - h4 */

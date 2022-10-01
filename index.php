@@ -32,5 +32,6 @@
     </main>
 
 <?php require 'footer.php'; ?>
+<script src="toggle.js"></script>
 </body>
 </html>
