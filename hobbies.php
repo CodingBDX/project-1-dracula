@@ -1,54 +1,47 @@
-    <?php
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="hobbies" href="hobbies.css"/>
-</head>
-<body>
-<div classe="titlehobbies"> 
-   <strong> <h3> Hobbies </h3> </strong>
-    </div>
 
-    <div classe="contenthobbies">
-    <ul>
-    <h4> <li> Hypnose </li></h4>
-    <h4> <li> Consumption of human blood </li></h4>
-    <h4> <li> Run away from sunlight </li></h4>
-    <h4> <li> Transform into a bat </li></h4>
-    <h4> <li> Playing piano </li></h4>
-    <h4> <li> Sleeping in a coffin </li></h4>
-</ul>
-    </div>
+    <div class="hobbies">
 
-</body>
-</html>
+     <div class="header">
 
-body {
-    background-color: var(--background);
-    margin: 0px;
-    padding: 0px;
-    color: var(--text);
+     <div class="align-candle">
+            <div class="candles">
+                <div class="shadow">
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+</div>
+  </div>
+</div>
+      
 
-}
-.titlehobbies {
-    display: list-item;
-    font-weight: bold;
-    font-family: var (--typo-title);
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-els);
+            <h3>Hobbies</h3>
+<div class="align-candle">
+            <div class="candles">
+                                <div class="shadow">
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+    <div class="fire"></div>
+</div>
+  </div>
+</div>
+        
+        </div>
+
+<div class="content">
     
-    
+   
+<?php
+$hobbies = ['Hypnose', 'Consumption of human blood', 'Run away from sunlight', 'Transform into a bat', 'Playing piano', 'Sleeping in a coffin'];
+echo '<ul>';
+foreach ($hobbies as $key => $hobbie) {
+    echo '<li>'.$hobbie.'</li>';
 }
+echo '</ul>';
+?>
+</div>
+</div>
 
-.contenthobbies {
-    color: var(--text);
-    display: block;
-    font-family: var(--typo-title);
-    font-size: 2.2em;
-    text-align: start;
-    ?>
-<PHP> echo '<link rel="stylesheet" type="text/css" href="hobbies.css"></head>'; <PHP>

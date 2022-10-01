@@ -23,6 +23,8 @@
         <?php require 'experiences.php'; ?>
     <div id="formation-hobbies">
         <?php require 'formations.php'; ?>
+        <?php require 'hobbies.php'; ?>
+
         
     </div>
 </div>    

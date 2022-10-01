@@ -1,27 +1,154 @@
-body {
-    background-color: var(--background);
-    margin: 0px;
-    padding: 0px;
-    color: var(--text);
+/* antony experiences */
+.hobbies {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin: .6em 0;
 
-}
-.titlehobbies {
-    display: list-item;
-    font-weight: bold;
-    font-family: var (--typo-title);
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: var(--background-els);
-    
-    
+    color: var(--text);
+
 }
 
-.contenthobbies {
+.hobbies .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    padding: .6em 0;
+
+
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    border-bottom: .5em solid rgba(#3F0A59, .5);
+    -webkit-box-shadow: -3px 13px 15px -9px #FF5FF8;
+    box-shadow: -3px 13px 15px -9px #FF5FF8;
+
+}
+
+
+.hobbies .header h3 {
+    align-self: center;
+    text-align: center;
+    color: var(--title);
+    font-weight: bolder;
+    font-size: 2.3em;
+    font-family: 'Creepster', cursive;
+    width: 50%;
+
+}
+
+.hobbies .content {
+    width: 100%;
+    margin: 2em 0;
+}
+
+.hobbies .content ul {
+    text-align: center;
+}
+
+.hobbies .content ul li {
+    list-style-type: none;
+}
+
+.hobbies .content ul li:nth-child(odd) {
     color: var(--text);
-    display: block;
-    font-family: var(--typo-title);
-    font-size: 2.2em;
-    text-align: start;
+    background-color: var(--title);
+}
 
 
+/* ============================================== Candle
+*/
+.align-candle {
+    position: relative;
+    width: 5vw;
+    align-self: center;
+    transform: scale(1.2);
+}
+
+.candles {
+    background: #ee8228;
+    border-radius: 5%;
+    position: absolute;
+
+    width: 15px;
+    height: 22.666666666667px;
+}
+
+.candles .shadow {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: #6f3990;
+}
+
+
+.candles:after,
+.candles:before {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2.2222222222222px;
+}
+
+.candles:after {
+    top: 25%;
+    left: 0;
+}
+
+.candles:before {
+    top: 45%;
+    left: 0;
+}
+
+.fire {
+    border-radius: 100%;
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -3.3333333333333px;
+    width: 6.6666666666667px;
+    height: 12.5px;
+}
+
+.fire:nth-child(1) {
+    animation: fire 2s infinite;
+}
+
+.fire:nth-child(2) {
+    animation: fire 1.5s infinite;
+}
+
+.fire:nth-child(3) {
+    animation: fire 1s infinite;
+}
+
+.fire:nth-child(4) {
+    animation: fire 0.5s infinite;
+}
+
+.fire:nth-child(5) {
+    animation: fire 0.2s infinite;
+}
+
+@keyframes fire {
+    0% {
+        background: rgba(254, 248, 97, 0.5);
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        transform: translateY(-20px) scale(0);
+    }
+
+    100% {
+        background: rgba(254, 248, 97, 0.5);
+        transform: translateY(0) scale(1);
+    }
 }
