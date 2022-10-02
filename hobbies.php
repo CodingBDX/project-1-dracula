@@ -35,12 +35,28 @@
     
    
 <?php
-$hobbies = ['Hypnose', 'Consumption of human blood', 'Run away from sunlight', 'Transform into a bat', 'Playing piano', 'Sleeping in a coffin'];
-echo '<ul>';
-foreach ($hobbies as $key => $hobbie) {
-    echo '<li>'.$hobbie.'</li>';
+$hobbies = [
+    'lang-en' => ['Hypnose', 'Consumption of human blood', 'Run away from sunlight', 'Transform into a bat', 'Playing piano', 'Sleeping in a coffin'],
+    'lang-fr' => ['Hypnose', 'Consommer du sang humain', 'Fuir le soleil', 'Se transformer en chauve-souris', 'Jouer du piano', 'Dormir dans un cerceuil'],
+];
+function getMessage($arrays)
+{
+    if (isset($_GET['lang-fr'])) {
+        echo '<ul><li>'.
+             implode('</li><li>', $arrays['lang-fr']).
+             '</li></ul>';
+    } elseif (isset($_GET['lang-en'])) {
+        echo '<ul><li>'.
+                     implode('</li><li>', $arrays['lang-en']).
+                     '</li></ul>';
+    } else {
+        echo '<ul><li>'.
+                             'not work'.
+                             '</li></ul>';
+    }
 }
-echo '</ul>';
+
+getMessage($hobbies);
 ?>
 </div>
 </div>
