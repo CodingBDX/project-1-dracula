@@ -8,6 +8,36 @@
     color: var(--text);
 
 }
-
-
-.formation h3 {}
+.formation h3 {
+    color: var(--title);
+    font-weight: bolder;
+    font-size: 2.3em;
+    font-family: 'Creepster', cursive;
+}
+.diplome {
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 14pt;
+}
+.lieux{
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 14pt;
+}
+.date_debut, .date_fin  {
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 14pt
+}
+.centre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt
+}
+.tabulations{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
