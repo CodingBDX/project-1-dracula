@@ -17,7 +17,7 @@
     --typo-title: font-family: 'Creepster', cursive;
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width: 769px) {
 
     #container,
     #container-parcour {
