@@ -1,17 +1,4 @@
 /* Julien formation */
-.formation {
-    display: flex;
-    width: calc(100vw - 1.2em);
-    flex-direction: column;
-    margin: .6em 0;
-
-    border-radius: .8em;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-els);
-    color: var(--text);
-
-}
 
 .formation .header {
     display: flex;
@@ -20,26 +7,22 @@
     align-items: center;
     padding: .6em 0;
     text-align: center;
-
+    
     background-color: rgba(0, 0, 0, .4);
     width: 100%;
     border-bottom: .5em solid rgba(#3F0A59, .5);
 }
-/*
 
 .formation .header>div {
-
     width: 50%;
 }
 
-.formation .header h3 {
+h3 {
 
     color: var(--title);
     font-weight: bolder;
     font-size: 2.3em;
     font-family: 'Creepster', cursive;
-
-
 }
 
 .formation .header svg {
@@ -48,66 +31,48 @@
     border-radius: 50%;
 
 }
+.formation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-els);
+    color: var(--text);;
 
-.formation .content {
-    margin: .8em 0;
-    width: 100%;
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 30% 70%;
+
 }
-
-.formation .content .time:nth-child(1n) {
-    margin-left: 50%;
-    padding-top: .4em;
-}
-
-.formation .content .time:nth-last-child(2) {
-    align-self: flex-start;
-}
-
-
-.formation .content .data-formation {
-    text-align: start;
-}
-
-.formation .content .data-formation h4 {
-    font-size: 1.2em;
-    font-weight: 900;
-    text-decoration: underline;
-}
-
-.formation .content .data-formation i {
-    text-decoration: wavy;
-    font-weight: 200;
-}
-
-.formation .content .data-formation mark {
-    text-decoration: none;
-    background-color: var(--title);
+.diplome {
     color: var(--text);
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: 50px;
 }
-
-.formation .content span.rounded {
-    position: relative;
-    display: block;
-
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--title);
-    /* margin-top: 1.8rem;
+.lieux{
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+.date {
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+.centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: var(--background-els);
 
 }
-
-.formation .content span.line {
-    display: block;
-    width: 2px;
-    height: 100%;
-    background-color: var(--title);
-    transform: translate(7px, 0);
-}*/
-
+.tabulations{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
 /* goute de sange */
 
 .drop {
@@ -158,19 +123,3 @@
         top: 100vh;
     }
 }
-.content { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: var(--background-els);
-    color: var(--text);
-
-}
-.centre { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;

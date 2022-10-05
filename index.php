@@ -21,6 +21,8 @@
     
     <div id="container-parcour">
         <?php require 'experiences.php'; ?>
+        </div>
+
     <div id="formation-hobbies">
         <?php require 'formations.php'; ?>
         <?php require 'hobbies.php'; ?>

@@ -27,6 +27,7 @@ $experiences = [
     ],
 ];
 ?>
+<br>
 <div class="experiences">
     <div class="header">
 

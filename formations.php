@@ -23,9 +23,10 @@ $studies = [
 ];
 ?>
 <div class="formation">
-<div class="header">
+    <div class="header">
 
-<div>
+    <div>
+
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 <g>
@@ -109,13 +110,13 @@ $studies = [
     </div>
     <div>
 <h3>Formation</h3>
-<span class="drop"></span>
+<div class="drop"></div>
 </div>
 </div>
 </div>
 
 <div class="content">
-<br>  
+
 
 
 <?php

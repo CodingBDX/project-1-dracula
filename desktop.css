@@ -23,11 +23,17 @@
     #container-parcour {
         display: flex;
         flex-direction: row;
+
     }
 
     #container-parcour {
-        width: 75%;
+        width: 33.33%;
     }
-}
+    #formation-hobbies {
+        margin-top: 100px;
+        width: 33.33%;
+        align-items: flex-end;
 
+
+    }
 }
