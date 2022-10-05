@@ -6,7 +6,9 @@ header {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-end; */
-    background: url('../img/hauntedcastle.jpg') center center no-repeat;
+    background: url('../img/castle.jpg') center center no-repeat;
+    filter: saturate(85%);
+    opacity: .7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +35,7 @@ header .button-toggle>div {
     /* justify-content: flex-end; */
 }
 
-header .button-toggle div>button {
+header .button-toggle div form>button {
     margin: .1em .6em 0 0;
 
     padding: .5em;
@@ -151,4 +153,30 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.blink {
+    /* position: absolute; */
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    animation: blinking .5s;
+}
+
+/* blinkin screen when click on switch button */
+@keyframes blinking {
+    0% {
+        background-color: #a72331;
+    }
+
+
+    25% {
+        background-color: rgba(0, 0, 0, .2)
+    }
+
+
+
+    100% {
+        background-color: #de3041;
+    }
 }

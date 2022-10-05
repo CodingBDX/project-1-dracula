@@ -13,8 +13,10 @@
 </label>
 </div>
 <div>
-    <button class="fr">FR</button>
-    <button class="en">EN</button>
+    <form action="" method="get">
+    <button class="fr" name="lang-fr">FR</button>
+    <button class="en" name="lang-en">EN</button>
+</form>
 
 </div>
 </div>

@@ -56,7 +56,46 @@
     width: 33%;
 }
 
+.experiences .content-svg {
+    position: absolute;
+    z-index: 2;
+    background: url("../img/hand.svg") center no-repeat;
+    width: 85%;
+    height: 100%;
+    opacity: .2;
+    filter: grayscale(90%);
+    ;
+
+}
+
+.experiences .content-svg:hover {
+    animation: tilt-shaking .5s infinite;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .experiences .content {
+
     margin: .8em 0;
     width: 100%;
     display: grid;

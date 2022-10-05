@@ -1,31 +1,5 @@
 <?php
-
-$experiences = [
-    [
-        'name' => 'poissonerie',
-        'address' => 'impasse de la tête coupee',
-        'date' => '1350',
-        'description' => 'bonne experience, patron delicieux avec ses employes',
-    ],
-    [
-        'name' => 'bouro',
-        'address' => 'place notre dame',
-        'date' => '06.1789',
-        'description' => 'decapiter les rois et reines',
-    ],
-    [
-        'name' => 'edouard',
-        'address' => '56 rue de la joue',
-        'date' => '1234.34',
-        'description' => 'superbe impalement',
-    ],
-    [
-        'name' => 'jscer',
-        'address' => '56 rue du uc',
-        'date' => '900/03',
-        'description' => 'superbe impalement',
-    ],
-];
+require_once 'variables.php';
 ?>
 <div class="experiences">
     <div class="header">
@@ -119,17 +93,28 @@ $experiences = [
 <div class="drop"></div>
 </div>
 </div>
+<div class="content-svg"></div>
 <div class="content">
     
 <?php
-foreach ($experiences as $key => $experience) {
+
+if (isset($_GET['lang-fr'])) {
+    $experience = $experiences['lang-fr'];
+} elseif (isset($_GET['lang-en'])) {
+    $experience = $experiences['lang-en'];
+} else {
+    exit('Language not set'); // or you could set a default here
+}
+
+foreach ($experience as $arrayIn => $other) {
     echo ' <div class="time">';
     echo ' <span class="rounded"></span>';
 
     echo '     <span class="line"></span>';
     echo '</div>';
     echo '<div class="data-experiences">';
-    foreach ($experience as $key => $value) {
+
+    foreach ($other as $key => $value) {
         switch ($key) {
             case 'address' === $key:
                 echo '<i>'.$value.'</i>'.'</br>';
@@ -152,9 +137,10 @@ foreach ($experiences as $key => $experience) {
                 break;
         }
     }
-
     echo '</br></div>';
 }
+
 ?>
 </div>
+
 </div>

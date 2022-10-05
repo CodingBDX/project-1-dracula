@@ -1,53 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
-@import url(./css/contacts.css);
-@import url(./css/experiences.css);
-@import url(./css/formations.css);
-@import url(./css/header.css);
-@import url(./css/hobbies.css);
-@import url(./css/footer.css);
-
-.light {
-    --title: #5D0030;
-    /* h2 - h3 - h4 */
-    --background: #7C2A3F;
-    /* fond du body */
-    --background-els: #DD5561;
-    /* fond des sections */
-    --text: #4C697C;
-    /* texte des sections et h1 */
-}
-
-:root {
-    --title: #C756B3;
-    /* h2 - h3 - h4 */
-    --background: #1C0C24;
-    /* fond du body */
-    --background-els: #3F0A59;
-    /* fond des sections */
-    --text: #a24090;
-    /* texte des sections et h1 */
-    --typo-title: font-family: 'Creepster', cursive;
-    /* police d'écriture des titres */
-}
-
-/* reset des margin et padding des navigateurs */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--background);
-}
+@media only screen and (max-width:600px) {
 
 
-#container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    /* header start */
+    header {
+        width: 100vw;
+        height: 50vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header .button-toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* padding: 0  0 0; */
+    }
+
+    header .banner {
+        margin-top: 1.3em;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+
+    }
+
+    header .banner img {
+        width: 30vw;
+    }
+
+    /* header end */
+    footer>svg {
+        width: 10vw;
+    }
+
 }

@@ -1,18 +1,815 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url(./css/experiences.css);
-@import url(./css/formations.css);
-@import url(./css/header.css);
-@import url(./css/hobbies.css);
-@import url(./mobil.css);
+@media only screen and (min-width: 601px) {
 
-:root {
-    --title: #C756B3;
-    /* h2 - h3 - h4 */
-    --background: #1C0C24;
-    /* fond du body */
-    --background-els: #3F0A59;
-    /* fond des sections */
-    --text: #DAD1D2;
-    /* texte des sections et h1 */
-    --typo-title: font-family: 'Creepster', cursive;
+    /* HEADER (Alexis) */
+    header {
+        width: 100vw;
+        height: 15vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    header>div {
+        width: auto;
+        /* justify-content: center; */
+        align-self: center;
+    }
+
+    header .button-toggle {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    header .button-toggle>div {
+        margin: 1em 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .button-toggle div form>button {
+        margin: .1em .6em 0 0;
+
+        padding: .5em;
+        background-color: var(--title);
+        text-transform: capitalize;
+        font-weight: 900;
+        font-size: 1.2em;
+        border-radius: .5em;
+        border: none;
+        color: white;
+    }
+
+    header .banner {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 1em;
+
+
+    }
+
+    header .banner img {
+        top: 5px;
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    h1,
+    h2 {
+        font-family: "Creepster", cursive;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        align-self: center;
+
+        color: #971C27;
+        letter-spacing: .3em;
+        line-height: .2em;
+        font-size: 6em;
+
+        text-shadow: 2px 2px var(--title);
+    }
+
+    h2 {
+        color: var(--title);
+        text-align: center;
+        max-width: 70vw;
+        margin: 10px auto;
+        font-size: 4em;
+        line-height: 1.2em;
+    }
+
+    /* // fin HEADER */
+
+
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        transform: scale(1.2);
+        margin: .6em 2.6em 0 0;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--title);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: var(--background-els);
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--background-els);
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .blink {
+        /* position: absolute; */
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        animation: blinking .5s;
+    }
+
+    /* blinkin screen when click on switch button */
+    @keyframes blinking {
+        0% {
+            background-color: #a72331;
+        }
+
+
+        25% {
+            background-color: rgba(0, 0, 0, .2)
+        }
+
+
+
+        100% {
+            background-color: #de3041;
+        }
+    }
+
+    /* end header */
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100%;
+    }
+
+    #container-parcour {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        height: 100%;
+    }
+
+    #formation-hobbies {
+        width: 50%;
+    }
+
+
+    /* contact form */
+
+    .contact {
+        background: var(--background-els);
+        width: 20%;
+        padding: 20px;
+        margin-right: .5em;
+        color: var(--text);
+        border-radius: 20px;
+    }
+
+    .contact h3 {
+        color: var(--title);
+        font-size: 2.3em;
+        font-family: 'Creepster', cursive;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact h4 {
+        font-style: normal;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: underline;
+        margin: 10px 0;
+    }
+
+    .contact address {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+    }
+
+    .contact address .block {
+        width: 40vw;
+    }
+
+    .contact p,
+    .contact a {
+        font-size: 1.1em;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: #aa5999;
+    }
+
+    /* contact end */
+
+    /* experiences start */
+    .experiences {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border-radius: .8em .8em 0 .8em;
+        align-items: center;
+        background-color: var(--background-els);
+        color: var(--text);
+
+    }
+
+    .experiences .header {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        padding: .6em 0;
+        text-align: center;
+
+        background-color: rgba(0, 0, 0, .4);
+        width: 100%;
+        border-bottom: .5em solid rgba(#3F0A59, .5);
+    }
+
+    .experiences .header>div {
+
+        width: 50%;
+    }
+
+    .experiences .header h3 {
+
+        color: var(--title);
+        font-weight: bolder;
+        font-size: 2.3em;
+        font-family: 'Creepster', cursive;
+
+
+    }
+
+    .experiences .header svg {
+        width: 5vw;
+        background-color: var(--background-els);
+        border-radius: 50%;
+
+    }
+
+    .experiences .header>div:nth-child(2) {
+        width: 67%;
+    }
+
+    .experiences .header>div:nth-child(1) {
+        width: 33%;
+    }
+
+    .experiences .content-svg {
+        position: absolute;
+        margin-top: 30vh;
+        z-index: 2;
+        background: url("../img/hand.svg") center no-repeat;
+        width: 85%;
+        height: 50%;
+        opacity: .2;
+        filter: grayscale(90%);
+        ;
+
+    }
+
+    .experiences .content-svg:hover {
+        animation: tilt-shaking .5s infinite;
+    }
+
+    @keyframes tilt-shaking {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(5deg);
+        }
+
+        50% {
+            transform: rotate(0eg);
+        }
+
+        75% {
+            transform: rotate(-5deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .experiences .content {
+
+        margin: .8em 0;
+        width: 100%;
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 30% 70%;
+    }
+
+    .experiences .content .time:nth-child(1n) {
+        margin-left: 50%;
+        padding-top: .4em;
+    }
+
+    .experiences .content .time:nth-last-child(2) {
+        align-self: flex-start;
+    }
+
+
+    .experiences .content .data-experiences {
+        text-align: start;
+    }
+
+    .experiences .content .data-experiences h4 {
+        font-size: 1.2em;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .experiences .content .data-experiences i {
+        text-decoration: wavy;
+        font-weight: 200;
+    }
+
+    .experiences .content .data-experiences mark {
+        text-decoration: none;
+        background-color: var(--title);
+        color: var(--text);
+    }
+
+    .experiences .content span.rounded {
+        position: relative;
+        display: block;
+
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--title);
+        /* margin-top: 1.8rem; */
+
+    }
+
+    .experiences .content span.line {
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: var(--title);
+        transform: translate(7px, 0);
+    }
+
+    /* goute de sange */
+
+    .drop {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        top: -15px;
+        margin: 0 auto;
+        background: var(--title);
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        -moz-animation-name: drip;
+        -webkit-animation-name: drip;
+        animation-name: drip;
+        -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        -moz-animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        left: 56px
+    }
+
+    .drop:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid var(--title);
+        top: -8px;
+        left: 2px
+    }
+
+    @keyframes drip {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+            top: 100vh;
+        }
+    }
+
+    /* experiences end */
+
+
+    /* formations start */
+    .formations {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+
+        border-radius: .8em .8em 0 0;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-els);
+        color: var(--text);
+
+    }
+
+    .formations .header {
+        display: flex;
+        flex-direction: row-reverse;
+
+        align-items: center;
+        padding: .6em 0;
+        text-align: center;
+
+        background-color: rgba(0, 0, 0, .4);
+        width: 100%;
+        border-bottom: .5em solid rgba(#3F0A59, .5);
+    }
+
+    .formations .header>div {
+
+        width: 50%;
+    }
+
+    .formations .header h3 {
+
+        color: var(--title);
+        font-weight: bolder;
+        font-size: 2.3em;
+        font-family: 'Creepster', cursive;
+
+
+    }
+
+    .formations .header svg {
+        width: 5vw;
+        background-color: var(--background-els);
+        border-radius: 50%;
+
+    }
+
+    .formations .header>div:nth-child(2) {
+        width: 67%;
+    }
+
+    .formations .header>div:nth-child(1) {
+        width: 33%;
+    }
+
+    .formations .content {
+        margin: .8em 0;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-gap: 0;
+        grid-template-columns: 70% 30%;
+    }
+
+    .formations .content .time:nth-child(1n) {
+        margin-left: 40%;
+        padding-top: .4em;
+    }
+
+    .formations .content .time:nth-last-child(2) {
+        align-self: flex-start;
+    }
+
+    .formations .content .time {
+        grid-column: 2;
+    }
+
+    .formations .content .data-experiences {
+        text-align: end;
+        grid-column: 1;
+
+    }
+
+    .formations .content .data-experiences h4 {
+        font-size: 1.2em;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .formations .content .data-experiences i {
+        text-decoration: wavy;
+        font-weight: 200;
+    }
+
+    .formations .content .data-experiences mark {
+        text-decoration: none;
+        background-color: var(--title);
+        color: var(--text);
+    }
+
+    .formations .content span.rounded {
+        position: relative;
+        display: block;
+
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--title);
+        /* margin-top: 1.8rem; */
+
+    }
+
+    .formations .content span.line {
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: var(--title);
+        transform: translate(7px, 0);
+    }
+
+    /* goute de sange */
+
+    .drop {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        top: -15px;
+        margin: 0 auto;
+        background: var(--title);
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        -moz-animation-name: drip;
+        -webkit-animation-name: drip;
+        animation-name: drip;
+        -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        animation-timing-function: cubic-bezier(1, 0, .91, .19);
+        -moz-animation-duration: 7s;
+        -webkit-animation-duration: 7s;
+        animation-duration: 7s;
+
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        left: 56px
+    }
+
+    .drop:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid var(--title);
+        top: -8px;
+        left: 2px
+    }
+
+    @keyframes drip {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+            top: 100vh;
+        }
+    }
+
+    /* formations end */
+
+
+    /* hobbies start */
+
+    /* antony experiences */
+    .hobbies {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-els);
+        color: var(--text);
+
+    }
+
+    .hobbies .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+        padding: .6em 0;
+
+
+        background-color: rgba(0, 0, 0, .4);
+        width: 100%;
+        border-bottom: .5em solid rgba(#3F0A59, .5);
+        -webkit-box-shadow: -3px 13px 15px -9px #FF5FF8;
+        box-shadow: -3px 13px 15px -9px #FF5FF8;
+
+    }
+
+
+    .hobbies .header h3 {
+        align-self: center;
+        text-align: center;
+        color: var(--title);
+        font-weight: bolder;
+        font-size: 2.3em;
+        font-family: 'Creepster', cursive;
+        width: 50%;
+
+    }
+
+    .hobbies .content {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .hobbies .content ul {
+        text-align: center;
+    }
+
+    .hobbies .content ul li {
+        list-style-type: none;
+    }
+
+    .hobbies .content ul li:nth-child(odd) {
+        color: var(--text);
+        background-color: var(--title);
+    }
+
+
+    /* ============================================== Candle
+*/
+    .align-candle {
+        position: relative;
+        width: 5vw;
+        align-self: center;
+        transform: scale(1.2);
+    }
+
+    .candles {
+        background: #ee8228;
+        border-radius: 5%;
+        position: absolute;
+
+        width: 15px;
+        height: 22.666666666667px;
+    }
+
+    .candles .shadow {
+        width: 50%;
+        height: 100%;
+        right: 0;
+        background-color: #6f3990;
+    }
+
+
+    .candles:after,
+    .candles:before {
+        background: rgba(0, 0, 0, 0.4);
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 2.2222222222222px;
+    }
+
+    .candles:after {
+        top: 25%;
+        left: 0;
+    }
+
+    .candles:before {
+        top: 45%;
+        left: 0;
+    }
+
+    .fire {
+        border-radius: 100%;
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        margin-left: -3.3333333333333px;
+        width: 6.6666666666667px;
+        height: 12.5px;
+    }
+
+    .fire:nth-child(1) {
+        animation: fire 2s infinite;
+    }
+
+    .fire:nth-child(2) {
+        animation: fire 1.5s infinite;
+    }
+
+    .fire:nth-child(3) {
+        animation: fire 1s infinite;
+    }
+
+    .fire:nth-child(4) {
+        animation: fire 0.5s infinite;
+    }
+
+    .fire:nth-child(5) {
+        animation: fire 0.2s infinite;
+    }
+
+    @keyframes fire {
+        0% {
+            background: rgba(254, 248, 97, 0.5);
+            transform: translateY(0) scale(1);
+        }
+
+        50% {
+            background: rgba(255, 50, 0, 0.1);
+            transform: translateY(-20px) scale(0);
+        }
+
+        100% {
+            background: rgba(254, 248, 97, 0.5);
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    /*  hobbies end */
+
+    /*  footer start */
+
+    footer {
+        color: var(--text);
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer>svg {
+        width: 5vw;
+    }
+
+    /* footer end */
 }
