@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dracula | CV en ligne</title>
     <link rel="stylesheet" href="desktop.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- partie de alexis -->
-    <?php require 'header.php'; ?>
-    <main>
-<div id="container">
-    
-<?php require 'contact.php'; ?>    
-    <!-- partie end alexis -->
-    
-    <div id="container-parcour">
-        <?php require 'experiences.php'; ?>
-    <div id="formation-hobbies">
-        <?php require 'formations.php'; ?>
-        <?php require 'hobbies.php'; ?>
+<!-- partie de alexis -->
+<?php require 'header.php'; ?>
+<main>
+    <div id="container">
+
+        <?php require 'contact.php'; ?>
+        <!-- partie end alexis -->
+
+        <div id="container-parcour">
+            <?php require 'experiences.php'; ?>
+            <div id="formation-hobbies">
+                <?php require 'formations.php'; ?>
+                <?php require 'hobbies.php'; ?>
+            </div>
+        </div>
     </div>
-</div>    
-</div>
-    </main>
+</main>
 
 <?php require 'footer.php'; ?>
 </body>
