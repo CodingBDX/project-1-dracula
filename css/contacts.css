@@ -31,9 +31,8 @@
 }
 
 .contact address {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width: fit-content;
+    margin: 0 auto;
     letter-spacing: 1px;
     line-height: 1.5em;
 }
@@ -49,4 +48,16 @@
 .contact a {
     text-decoration: none;
     color: #aa5999;
+}
+
+@media screen and (min-width: 769px) {
+
+    .contact {
+        width: 25%;
+    }
+    .contact address {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
