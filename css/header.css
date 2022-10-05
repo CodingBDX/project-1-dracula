@@ -3,8 +3,8 @@
     width: 100vw;
     padding: 10px;
     background: url("../img/hauntedcastle.jpg") center;
+    background-size: cover;
     text-align: center;
-
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -36,6 +36,16 @@ h2 {
     margin: 10px auto;
     font-size: 2em;
     line-height: 1.2em;
+}
+
+@media screen and (min-width: 769px) {
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
 }
 
 /* // fin HEADER */
