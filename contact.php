@@ -2,7 +2,7 @@
     <?php
 
     $contacts = [
-        "adresse" => "Chateau Nosferatu,<br>Rue General Traian Moșoiu 24,<br>507025 BRAN,<br>Roumanie",
+        "adresse" => "Château Nosferatu,<br> Rue General Traian Moșoiu 24,<br>507025 BRAN,<br>Roumanie",
         "téléphone" => "+40 (859) 666-1897",
         "courriel" => "dracula@bramstoker.ro",
         "groupe-sanguin" => "O (buveur universel)"
