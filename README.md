@@ -1,9 +1,9 @@
-# Projet n1 - Wild Code School
+# Projet n°1 - Wild Code School
 ---
 
 ## Lien
 
-- Projet visionable à cette adresse
+- Projet visionnable à cette adresse
 
 ## Équipe
 
@@ -31,7 +31,7 @@ Création d'un CV en ligne pour le client Dracula, avec une deadline de deux sem
 
 - Nous avons utilisé la technologie PHP 8.1.
 - Méthode agile
-- Flex pour le cote responsive
+- Flex pour le côté responsive
 - Github pour le versionning
 
 ## Déroulement du projet
