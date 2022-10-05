@@ -18,7 +18,7 @@ Création d'un CV en ligne pour le client Dracula, avec une deadline de deux sem
 
 ## Procédé
 
-- [x] analyse des besoin du client
+- [x] analyse des besoins du client
 - [x] individualisation des différentes sections à inclure dans la structure générale
 - [x] choix des typo (Creepster, via Google Fonts, pour les titres), et des palettes de couleur (dégradés de violet)
 - [x] creation du wireframe en 3 étapes : papier / low-fidelity (Excalidraw) / middle-high fidelity (Figma)
@@ -29,7 +29,7 @@ Création d'un CV en ligne pour le client Dracula, avec une deadline de deux sem
 
 ## Technologie
 
-- Nous avons utilise la technologie PHP 8.1.
+- Nous avons utilisé la technologie PHP 8.1.
 - Méthode agile
 - Flex pour le cote responsive
 - Github pour le versionning
