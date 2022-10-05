@@ -3,7 +3,7 @@
 @import url(./css/formations.css);
 @import url(./css/header.css);
 @import url(./css/hobbies.css);
-@import url(./mobil.css);
+@import url(./css/contacts.css);
 
 :root {
     --title: #C756B3;
@@ -15,4 +15,19 @@
     --text: #DAD1D2;
     /* texte des sections et h1 */
     --typo-title: font-family: 'Creepster', cursive;
+}
+
+@media only screen and (min-width:769px) {
+
+    #container,
+    #container-parcour {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #container-parcour {
+        width: 75%;
+    }
+}
+
 }
