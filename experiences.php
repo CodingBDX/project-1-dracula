@@ -103,7 +103,9 @@ if (isset($_GET['lang-fr'])) {
 } elseif (isset($_GET['lang-en'])) {
     $experience = $experiences['lang-en'];
 } else {
-    exit('Language not set'); // or you could set a default here
+    $experience = $experiences['lang-fr'];
+
+    // or you could set a default here
 }
 
 foreach ($experience as $arrayIn => $other) {
