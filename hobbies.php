@@ -51,8 +51,9 @@ function getMessage($arrays)
                      '</li></ul>';
     } else {
         echo '<ul><li>'.
-                             'not work'.
-                             '</li></ul>';
+
+ implode('</li><li>', $arrays['lang-fr']).
+             '</li></ul>';
     }
 }
 
