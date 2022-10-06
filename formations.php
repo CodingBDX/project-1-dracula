@@ -1,33 +1,3 @@
-<?php
-$studies = [
-    [
-        'Diplome' => 'CAP petite enfance',
-        'Lieux' => 'Timiçoara',
-        'Date' => '1623',
-    ],
-    [
-        'Diplome' => 'Baccalaureat série ES',
-        'Lieux' => 'Bucarest',
-        'Date' => '1897',
-    ],
-    [
-        'Diplome' => 'BTS  Hostellerie restauration',
-        'Lieux' => 'Transilvanie',
-        'Date' => '1900',
-    ],
-    [
-        'Diplome' => 'Doctora de Medecin légiste',
-        'Lieux' => 'Paris',
-        'Date' => '1940',
-    ],
-    [
-        'Diplome' => 'Deuxième Etoile de Ski',
-        'Lieux' => 'Carpates',
-        'Date' => '2000',
-    ],
-];
-
-?>
 
 
 
@@ -47,17 +17,29 @@ $studies = [
 <div class="content">
     
 <?php
-foreach ($studies as $key => $study) {
+
+if (isset($_GET['lang-fr'])) {
+    $formation = $formations['lang-fr'];
+} elseif (isset($_GET['lang-en'])) {
+    $formation = $formations['lang-en'];
+} else {
+    $formation = $formations['lang-fr'];
+
+    // or you could set a default here
+}
+
+foreach ($formation as $arrayIn => $other) {
     echo ' <div class="time">';
     echo ' <span class="rounded"></span>';
 
     echo '     <span class="line"></span>';
     echo '</div>';
     echo '<div class="data-experiences">';
-    foreach ($study as $key => $value) {
+
+    foreach ($other as $key => $value) {
         switch ($key) {
             case 'Diplome' === $key:
-                echo '<h4>'.$value.'</h4>'.'</br>';
+                echo '<i>'.$value.'</i>'.'</br>';
 
                 break;
 
@@ -66,13 +48,12 @@ foreach ($studies as $key => $study) {
 
                 break;
 
-            case 'Lieux' === $key:
+            case 'Lieu' === $key:
                 echo '<mark>'.$value.'</mark>'.'</br>';
 
                 break;
         }
     }
-
     echo '</br></div>';
 }
 

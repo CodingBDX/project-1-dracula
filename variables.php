@@ -59,6 +59,66 @@ $experiences = [
     ],
 ];
 
+// formations
+
+$formations = [
+    'lang-fr' => [
+        [
+            'Diplome' => 'CAP petite enfance',
+            'Lieux' => 'Timiçoara',
+            'Date' => '1623',
+        ],
+        [
+            'Diplome' => 'Baccalaureat série ES',
+            'Lieux' => 'Bucarest',
+            'Date' => '1897',
+        ],
+        [
+            'Diplome' => 'BTS  Hostellerie restauration',
+            'Lieux' => 'Transilvanie',
+            'Date' => '1900',
+        ],
+        [
+            'Diplome' => 'Doctora de Medecin légiste',
+            'Lieux' => 'Paris',
+            'Date' => '1940',
+        ],
+        [
+            'Diplome' => 'Deuxième Etoile de Ski',
+            'Lieux' => 'Carpates',
+            'Date' => '2000',
+        ],
+    ],
+
+    'lang-en' => [
+        [
+            'Diplome' => 'CAP petite enfance',
+            'Lieux' => 'Timiçoara',
+            'Date' => '1623',
+        ],
+        [
+            'Diplome' => 'Baccalaureat série ES',
+            'Lieux' => 'Bucarest',
+            'Date' => '1897',
+        ],
+        [
+            'Diplome' => 'BTS  Hostellerie restauration',
+            'Lieux' => 'Transilvanie',
+            'Date' => '1900',
+        ],
+        [
+            'Diplome' => 'Doctora de Medecin légiste',
+            'Lieux' => 'Paris',
+            'Date' => '1940',
+        ],
+        [
+            'Diplome' => 'Deuxième Etoile de Ski',
+            'Lieux' => 'Carpates',
+            'Date' => '2000',
+        ],
+    ],
+];
+
 $hobbies = [
     'lang-en' => ['Hypnose', 'Consumption of human blood', 'Run away from sunlight', 'Transform into a bat', 'Playing piano', 'Sleeping in a coffin'],
     'lang-fr' => ['Hypnose', 'Consommer du sang humain', 'Fuir le soleil', 'Se transformer en chauve-souris', 'Jouer du piano', 'Dormir dans un cerceuil'],
