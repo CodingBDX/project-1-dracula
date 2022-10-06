@@ -123,7 +123,7 @@ header>div {
 
 header .button-toggle div form>button {
     margin: .1em .6em 0 0;
-
+    z-index: 4;
     padding: .5em;
     background-color: var(--title);
     text-transform: capitalize;
@@ -166,23 +166,6 @@ h2 {
 
 
 
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    transform: scale(1.2);
-    margin: .6em 2.6em 0 0;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
 .blink {
     /* position: absolute; */
     z-index: 100;
@@ -216,9 +199,10 @@ h2 {
 .experiences,
 .formations {
     display: flex;
-    width: calc(100vw - 1.2em);
+    width: 95vw;
+
     flex-direction: column;
-    margin: .6em 0;
+    margin: .6em auto;
 
     border-radius: .8em;
     justify-content: center;
@@ -231,8 +215,6 @@ h2 {
 .experiences .header,
 .formations .header {
     display: flex;
-    flex-direction: row;
-
     align-items: center;
     padding: .6em 0;
     text-align: center;
@@ -290,14 +272,22 @@ h2 {
 
 }
 
+.formations .content>div {
+    grid-auto-flow: dense;
+}
+
 .experiences .content,
 .formations .content {
 
     margin: .8em 0;
     width: 100%;
+
+
     display: grid;
     grid-gap: 0;
     grid-template-columns: 30% 70%;
+
+
 }
 
 .experiences .content .time:nth-child(1n),
@@ -313,19 +303,20 @@ h2 {
 
 
 .experiences .content .data-experiences,
-.formations .content .data-experiences {
+.formations .content .data-formations {
     text-align: start;
+
 }
 
 .experiences .content .data-experiences h4,
-.formations .content .data-experiences h4 {
+.formations .content .data-formations h4 {
     font-size: 1.2em;
     font-weight: 900;
     text-decoration: underline;
 }
 
 .experiences .content .data-experiences i,
-.formations .content .data-experiences i {
+.formations .content .data-formations i {
     text-decoration: wavy;
     font-weight: 200;
 }

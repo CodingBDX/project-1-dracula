@@ -29,17 +29,17 @@ if (isset($_GET['lang-fr'])) {
 }
 
 foreach ($formation as $arrayIn => $other) {
-    echo ' <div class="time">';
-    echo ' <span class="rounded"></span>';
+    echo '<div class="time">';
+    echo '<span class="rounded"></span>';
 
-    echo '     <span class="line"></span>';
+    echo '<span class="line"></span>';
     echo '</div>';
-    echo '<div class="data-experiences">';
+    echo '<div class="data-formations">';
 
     foreach ($other as $key => $value) {
         switch ($key) {
             case 'Diplome' === $key:
-                echo '<i>'.$value.'</i>'.'</br>';
+                echo '<h4>'.$value.'</h4>'.'</br>';
 
                 break;
 
@@ -48,7 +48,7 @@ foreach ($formation as $arrayIn => $other) {
 
                 break;
 
-            case 'Lieu' === $key:
+            case 'Lieux' === $key:
                 echo '<mark>'.$value.'</mark>'.'</br>';
 
                 break;

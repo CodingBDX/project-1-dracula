@@ -36,4 +36,12 @@
         width: 10vw;
     }
 
+    .formations .header {
+        flex-direction: row-reverse;
+    }
+
+
+    /* Hide default HTML checkbox */
+
+
 }
