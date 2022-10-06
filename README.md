@@ -20,7 +20,7 @@ Création d'un CV en ligne pour le client Dracula, avec une deadline de deux sem
 
 - [x] analyse des besoins du client
 - [x] individualisation des différentes sections à inclure dans la structure générale
-- [x] choix des typo (Creepster, via Google Fonts, pour les titres), et des palettes de couleur (dégradés de violet)
+- [x] choix des typos (Creepster, via Google Fonts, pour les titres), et des palettes de couleur (dégradés de violet)
 - [x] creation du wireframe en 3 étapes : papier / low-fidelity (Excalidraw) / middle-high fidelity (Figma)
 - [x] organisation de la structure HTML
 - [x] organisation d'un repo distant Github pour centraliser le code
