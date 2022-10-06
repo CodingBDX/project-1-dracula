@@ -3,7 +3,7 @@ const elsEn = document.querySelector('.en');
 const elsFr = document.querySelector('.fr');
 
 let mySound = new Audio('thunder.wav');
-let mySoundBackground = new Audio('halloweesn.wav');
+let mySoundBackground = new Audio('halloween.wav');
 mySoundBackground.loop = true;
 mySoundBackground.volume = 0.2;
 addEventListener('load', (event) => {
