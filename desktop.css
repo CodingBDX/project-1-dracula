@@ -696,9 +696,8 @@
         list-style-type: none;
     }
 
-    .hobbies .content ul li:nth-child(odd) {
-        color: var(--text);
-        background-color: var(--title);
+    .hobbies .content ul li {
+        color: #DAD1D2;
     }
 
 
