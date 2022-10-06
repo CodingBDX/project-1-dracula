@@ -58,3 +58,8 @@ $experiences = [
         ],
     ],
 ];
+
+$hobbies = [
+    'lang-en' => ['Hypnose', 'Consumption of human blood', 'Run away from sunlight', 'Transform into a bat', 'Playing piano', 'Sleeping in a coffin'],
+    'lang-fr' => ['Hypnose', 'Consommer du sang humain', 'Fuir le soleil', 'Se transformer en chauve-souris', 'Jouer du piano', 'Dormir dans un cerceuil'],
+];
