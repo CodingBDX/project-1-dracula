@@ -1,0 +1,9 @@
+footer {
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+}
+
+footer>svg {
+    width: 10vw;
+}

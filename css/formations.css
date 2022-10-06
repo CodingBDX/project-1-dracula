@@ -1,0 +1,173 @@
+/* antony experiences */
+.formations {
+    display: flex;
+    width: calc(100vw - 1.2em);
+    flex-direction: column;
+    margin: .6em 0;
+
+    border-radius: .8em;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-els);
+    color: var(--text);
+
+}
+
+.formations .header {
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    padding: .6em 0;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    border-bottom: .5em solid rgba(#3F0A59, .5);
+}
+
+.formations .header>div {
+
+    width: 50%;
+}
+
+.formations .header h3 {
+
+    color: var(--title);
+    font-weight: bolder;
+    font-size: 2.3em;
+    font-family: 'Creepster', cursive;
+
+
+}
+
+.formations .header svg {
+    width: 10vw;
+    background-color: var(--background-els);
+    border-radius: 50%;
+
+}
+
+.formations .header>div:nth-child(2) {
+    width: 67%;
+}
+
+.formations .header>div:nth-child(1) {
+    width: 33%;
+}
+
+.formations .content {
+    margin: .8em 0;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 0;
+    grid-template-columns: 70% 30%;
+}
+
+.formations .content .time:nth-child(1n) {
+    margin-left: 40%;
+    padding-top: .4em;
+}
+
+.formations .content .time:nth-last-child(2) {
+    align-self: flex-start;
+}
+
+.formations .content .time {
+    grid-column: 2;
+}
+
+.formations .content .data-experiences {
+    text-align: end;
+    grid-column: 1;
+
+}
+
+.formations .content .data-experiences h4 {
+    font-size: 1.2em;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.formations .content .data-experiences i {
+    text-decoration: wavy;
+    font-weight: 200;
+}
+
+.formations .content .data-experiences mark {
+    text-decoration: none;
+    background-color: var(--title);
+    color: var(--text);
+}
+
+.formations .content span.rounded {
+    position: relative;
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--title);
+    /* margin-top: 1.8rem; */
+
+}
+
+.formations .content span.line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--title);
+    transform: translate(7px, 0);
+}
+
+/* goute de sange */
+
+.drop {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: -15px;
+    margin: 0 auto;
+    background: var(--title);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-animation-name: drip;
+    -webkit-animation-name: drip;
+    animation-name: drip;
+    -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    animation-timing-function: cubic-bezier(1, 0, .91, .19);
+    -moz-animation-duration: 7s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    left: 56px
+}
+
+.drop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--title);
+    top: -8px;
+    left: 2px
+}
+
+@keyframes drip {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+        top: 100vh;
+    }
+}
